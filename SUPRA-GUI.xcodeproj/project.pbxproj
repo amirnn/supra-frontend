@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5671D766E04FDD77E0450164 /* Pods_SUPRA_GUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFE0F1A60F2A6A464FD5946 /* Pods_SUPRA_GUI.framework */; };
+		E10952D422C93250006F65B9 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10952D322C93250006F65B9 /* UIConfig.swift */; };
+		E10952D922C993E2006F65B9 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10952D822C993E2006F65B9 /* Reducers.swift */; };
+		E1AB7CE422CB92BE0073E8EC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE322CB92BE0073E8EC /* Actions.swift */; };
+		E1AB7CE622CB95B90073E8EC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE522CB95B90073E8EC /* Store.swift */; };
+		E1AB7CE822CBD6F00073E8EC /* SupraConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE722CBD6F00073E8EC /* SupraConnectionController.swift */; };
 		E1CE886222C586410030F222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE886122C586410030F222 /* AppDelegate.swift */; };
 		E1CE886422C586410030F222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE886322C586410030F222 /* ViewController.swift */; };
 		E1CE886722C586410030F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CE886522C586410030F222 /* Main.storyboard */; };
@@ -15,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BAE27080EBCA626F4564478 /* Pods-SUPRA-GUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPRA-GUI.debug.xcconfig"; path = "Target Support Files/Pods-SUPRA-GUI/Pods-SUPRA-GUI.debug.xcconfig"; sourceTree = "<group>"; };
+		70A37E136DFEF34B73817405 /* Pods-SUPRA-GUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPRA-GUI.release.xcconfig"; path = "Target Support Files/Pods-SUPRA-GUI/Pods-SUPRA-GUI.release.xcconfig"; sourceTree = "<group>"; };
+		8EFE0F1A60F2A6A464FD5946 /* Pods_SUPRA_GUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPRA_GUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10952D322C93250006F65B9 /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		E10952D822C993E2006F65B9 /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reducers.swift; path = "/Users/amirnourinia/Developer/iOS/SUPRA-GUI/SUPRA-GUI/Redux Files/Reducers.swift"; sourceTree = "<absolute>"; };
+		E1AB7CE322CB92BE0073E8EC /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		E1AB7CE522CB95B90073E8EC /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E1AB7CE722CBD6F00073E8EC /* SupraConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupraConnectionController.swift; sourceTree = "<group>"; };
 		E1CE885E22C586410030F222 /* SUPRA-GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUPRA-GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CE886122C586410030F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1CE886322C586410030F222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5671D766E04FDD77E0450164 /* Pods_SUPRA_GUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E37D7B034379FF2D50CB79E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE0F1A60F2A6A464FD5946 /* Pods_SUPRA_GUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10952D722C932DC006F65B9 /* Redux Files */ = {
+			isa = PBXGroup;
+			children = (
+				E10952D822C993E2006F65B9 /* Reducers.swift */,
+				E1AB7CE322CB92BE0073E8EC /* Actions.swift */,
+				E1AB7CE522CB95B90073E8EC /* Store.swift */,
+			);
+			path = "Redux Files";
+			sourceTree = "<group>";
+		};
 		E1CE885522C586410030F222 = {
 			isa = PBXGroup;
 			children = (
 				E1CE886022C586410030F222 /* SUPRA-GUI */,
 				E1CE885F22C586410030F222 /* Products */,
+				F336C4BEEBE97E25BCB37FB8 /* Pods */,
+				5E37D7B034379FF2D50CB79E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +89,34 @@
 		E1CE886022C586410030F222 /* SUPRA-GUI */ = {
 			isa = PBXGroup;
 			children = (
-				E1CE886122C586410030F222 /* AppDelegate.swift */,
+				E1CE887322C5866C0030F222 /* Supporting Files */,
 				E1CE886322C586410030F222 /* ViewController.swift */,
+				E1AB7CE722CBD6F00073E8EC /* SupraConnectionController.swift */,
+				E10952D722C932DC006F65B9 /* Redux Files */,
 				E1CE886522C586410030F222 /* Main.storyboard */,
-				E1CE886822C586420030F222 /* Assets.xcassets */,
-				E1CE886A22C586420030F222 /* LaunchScreen.storyboard */,
 				E1CE886D22C586420030F222 /* Info.plist */,
 			);
 			path = "SUPRA-GUI";
+			sourceTree = "<group>";
+		};
+		E1CE887322C5866C0030F222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E10952D322C93250006F65B9 /* UIConfig.swift */,
+				E1CE886122C586410030F222 /* AppDelegate.swift */,
+				E1CE886822C586420030F222 /* Assets.xcassets */,
+				E1CE886A22C586420030F222 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F336C4BEEBE97E25BCB37FB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE27080EBCA626F4564478 /* Pods-SUPRA-GUI.debug.xcconfig */,
+				70A37E136DFEF34B73817405 /* Pods-SUPRA-GUI.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1CE887022C586420030F222 /* Build configuration list for PBXNativeTarget "SUPRA-GUI" */;
 			buildPhases = (
+				8D44880F79E79E6F494916B8 /* [CP] Check Pods Manifest.lock */,
 				E1CE885A22C586410030F222 /* Sources */,
 				E1CE885B22C586410030F222 /* Frameworks */,
 				E1CE885C22C586410030F222 /* Resources */,
+				572755EF4644C8B66815354D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		572755EF4644C8B66815354D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPRA-GUI/Pods-SUPRA-GUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPRA-GUI/Pods-SUPRA-GUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SUPRA-GUI/Pods-SUPRA-GUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D44880F79E79E6F494916B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SUPRA-GUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1CE885A22C586410030F222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AB7CE422CB92BE0073E8EC /* Actions.swift in Sources */,
 				E1CE886422C586410030F222 /* ViewController.swift in Sources */,
 				E1CE886222C586410030F222 /* AppDelegate.swift in Sources */,
+				E1AB7CE622CB95B90073E8EC /* Store.swift in Sources */,
+				E1AB7CE822CBD6F00073E8EC /* SupraConnectionController.swift in Sources */,
+				E10952D922C993E2006F65B9 /* Reducers.swift in Sources */,
+				E10952D422C93250006F65B9 /* UIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +384,7 @@
 		};
 		E1CE887122C586420030F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BAE27080EBCA626F4564478 /* Pods-SUPRA-GUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +403,7 @@
 		};
 		E1CE887222C586420030F222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A37E136DFEF34B73817405 /* Pods-SUPRA-GUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

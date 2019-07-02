@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import Alamofire
+
+let SUPRA_URL = URL(string: "http://127.0.1.1:6502/")
+
+
+// Supra related Functions
+func getValuesFromSupra(){
+	
+}
+
