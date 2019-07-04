@@ -84,7 +84,8 @@ class ViewController: UIViewController, StoreSubscriber {
 		switch currentMenu {
 		case Menus.Measure_Menu:
 			//TODO: Show Measure Menu
-			menuLabel.text = "Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
+			let activeNodes = getRunningNodesFromSupra()
+			menuLabel.text = "Active Nodes: \(activeNodes.joined()) Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
 		case Menus.Frequency_Menu:
 			menuLabel.text = "You pushed Frequncy Button!"
 		case Menus.Depth_Menu:
