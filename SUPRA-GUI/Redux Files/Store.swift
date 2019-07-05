@@ -20,6 +20,7 @@ enum Menus {
 
 // Store implmentation
 struct AppState: StateType {
+	var activeNodes: [String] = ["none"]
 	var frequency: Double = 0
 	var filters: [String] = ["none"]
 	var depth: Double = 0
