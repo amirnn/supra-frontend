@@ -24,9 +24,8 @@ The shape of the object in response's body will be as:
 `{"nodeIDs":[String]}`
 
 **"SUPRA_URL/parameters":**
-Sending a post request with a node id in its body to this url will return all the parameters for that node.
+Sending a GET request with a node id in its body to this url will return all the parameters for that node.
 shape of the object sent with the body should be similar to: `{"nodeID":"ID"}`
-This could be misleading because this `POST` request actually returns the internal state.
 
 ## POST REQUESTs
 
