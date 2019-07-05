@@ -37,12 +37,12 @@ Sending a post request with a node id in its body to this url will return all th
 shape of the object sent with the body should be similar to: `{"nodeID":"ID"}`
 This could be misleading because this `POST` request actually returns the internal state.
 
-**"SUPRA_URL/set_parameters"**
-A post request with an object in its body shaped as the example below would set a parameter in a specific node.
+**"SUPRA_URL/set_parameter"**
+A post request with an object in its body shaped as the example below would set a parameter in a specific node. Note that parameter is singular in the url.
 
 `{
     "nodeID":"id",
-    "parameterId":"id",
+    "parameterID":"id",
     "value":"value"
 }`
 
@@ -51,4 +51,3 @@ This is the classic `POST` request one would expect.
 
 
 ----------
-A typical POST Request looks Like as follows:
