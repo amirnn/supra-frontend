@@ -10,14 +10,19 @@
 		5671D766E04FDD77E0450164 /* Pods_SUPRA_GUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFE0F1A60F2A6A464FD5946 /* Pods_SUPRA_GUI.framework */; };
 		E10952D422C93250006F65B9 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10952D322C93250006F65B9 /* UIConfig.swift */; };
 		E10952D922C993E2006F65B9 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10952D822C993E2006F65B9 /* Reducers.swift */; };
+		E10ABB4E22D3616400DE6B1A /* DepthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10ABB4D22D3616400DE6B1A /* DepthViewController.swift */; };
+		E10ABB5222D382AD00DE6B1A /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10ABB5122D382AD00DE6B1A /* ConfigViewController.swift */; };
+		E10ABB5922D3854200DE6B1A /* ConfigMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10ABB5822D3854200DE6B1A /* ConfigMasterTableViewController.swift */; };
+		E10ABB5C22D385EE00DE6B1A /* ConfigDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10ABB5B22D385EE00DE6B1A /* ConfigDetailViewController.swift */; };
+		E12CD5B622D20058009E9CE7 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CD5B522D20058009E9CE7 /* MeasureViewController.swift */; };
+		E164754222D28DF900288834 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164754122D28DF900288834 /* DetailViewController.swift */; };
+		E164754422D290CD00288834 /* FrequencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164754322D290CD00288834 /* FrequencyViewController.swift */; };
 		E1AB7CE422CB92BE0073E8EC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE322CB92BE0073E8EC /* Actions.swift */; };
 		E1AB7CE622CB95B90073E8EC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE522CB95B90073E8EC /* Store.swift */; };
 		E1AB7CE822CBD6F00073E8EC /* SupraConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB7CE722CBD6F00073E8EC /* SupraConnectionController.swift */; };
 		E1C3BE1422CE8E12008552C7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3BE1322CE8E12008552C7 /* Model.swift */; };
-		E1C3BE1622CF7E64008552C7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3BE1522CF7E64008552C7 /* MasterViewController.swift */; };
-		E1C3BE1A22CF8148008552C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3BE1922CF8148008552C7 /* DetailViewController.swift */; };
 		E1CE886222C586410030F222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE886122C586410030F222 /* AppDelegate.swift */; };
-		E1CE886422C586410030F222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE886322C586410030F222 /* ViewController.swift */; };
+		E1CE886422C586410030F222 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE886322C586410030F222 /* MasterViewController.swift */; };
 		E1CE886722C586410030F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CE886522C586410030F222 /* Main.storyboard */; };
 		E1CE886922C586420030F222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CE886822C586420030F222 /* Assets.xcassets */; };
 		E1CE886C22C586420030F222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CE886A22C586420030F222 /* LaunchScreen.storyboard */; };
@@ -29,15 +34,20 @@
 		8EFE0F1A60F2A6A464FD5946 /* Pods_SUPRA_GUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPRA_GUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10952D322C93250006F65B9 /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 		E10952D822C993E2006F65B9 /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reducers.swift; path = "/Users/amirnourinia/Developer/iOS/SUPRA-GUI/SUPRA-GUI/Redux Files/Reducers.swift"; sourceTree = "<absolute>"; };
+		E10ABB4D22D3616400DE6B1A /* DepthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthViewController.swift; sourceTree = "<group>"; };
+		E10ABB5122D382AD00DE6B1A /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		E10ABB5822D3854200DE6B1A /* ConfigMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigMasterTableViewController.swift; sourceTree = "<group>"; };
+		E10ABB5B22D385EE00DE6B1A /* ConfigDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDetailViewController.swift; sourceTree = "<group>"; };
+		E12CD5B522D20058009E9CE7 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		E164754122D28DF900288834 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E164754322D290CD00288834 /* FrequencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyViewController.swift; sourceTree = "<group>"; };
 		E1AB7CE322CB92BE0073E8EC /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		E1AB7CE522CB95B90073E8EC /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		E1AB7CE722CBD6F00073E8EC /* SupraConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupraConnectionController.swift; sourceTree = "<group>"; };
 		E1C3BE1322CE8E12008552C7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		E1C3BE1522CF7E64008552C7 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		E1C3BE1922CF8148008552C7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E1CE885E22C586410030F222 /* SUPRA-GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUPRA-GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CE886122C586410030F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1CE886322C586410030F222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1CE886322C586410030F222 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		E1CE886622C586410030F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1CE886822C586420030F222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1CE886B22C586420030F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,12 +85,33 @@
 			path = "Redux Files";
 			sourceTree = "<group>";
 		};
+		E10ABB5A22D3854A00DE6B1A /* ConfigSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E10ABB5B22D385EE00DE6B1A /* ConfigDetailViewController.swift */,
+				E10ABB5822D3854200DE6B1A /* ConfigMasterTableViewController.swift */,
+			);
+			path = ConfigSubViews;
+			sourceTree = "<group>";
+		};
+		E164754522D299AC00288834 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E12CD5B522D20058009E9CE7 /* MeasureViewController.swift */,
+				E164754322D290CD00288834 /* FrequencyViewController.swift */,
+				E10ABB4D22D3616400DE6B1A /* DepthViewController.swift */,
+				E10ABB5122D382AD00DE6B1A /* ConfigViewController.swift */,
+				E10ABB5A22D3854A00DE6B1A /* ConfigSubViews */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		E1C3BE1722CF7E83008552C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E1C3BE1522CF7E64008552C7 /* MasterViewController.swift */,
-				E1CE886322C586410030F222 /* ViewController.swift */,
-				E1C3BE1922CF8148008552C7 /* DetailViewController.swift */,
+				E1CE886322C586410030F222 /* MasterViewController.swift */,
+				E164754122D28DF900288834 /* DetailViewController.swift */,
+				E164754522D299AC00288834 /* SubViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,14 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10ABB4E22D3616400DE6B1A /* DepthViewController.swift in Sources */,
 				E1AB7CE422CB92BE0073E8EC /* Actions.swift in Sources */,
-				E1CE886422C586410030F222 /* ViewController.swift in Sources */,
+				E1CE886422C586410030F222 /* MasterViewController.swift in Sources */,
 				E1CE886222C586410030F222 /* AppDelegate.swift in Sources */,
+				E10ABB5222D382AD00DE6B1A /* ConfigViewController.swift in Sources */,
 				E1C3BE1422CE8E12008552C7 /* Model.swift in Sources */,
 				E1AB7CE622CB95B90073E8EC /* Store.swift in Sources */,
-				E1C3BE1622CF7E64008552C7 /* MasterViewController.swift in Sources */,
+				E10ABB5C22D385EE00DE6B1A /* ConfigDetailViewController.swift in Sources */,
+				E10ABB5922D3854200DE6B1A /* ConfigMasterTableViewController.swift in Sources */,
+				E164754422D290CD00288834 /* FrequencyViewController.swift in Sources */,
 				E1AB7CE822CBD6F00073E8EC /* SupraConnectionController.swift in Sources */,
-				E1C3BE1A22CF8148008552C7 /* DetailViewController.swift in Sources */,
+				E12CD5B622D20058009E9CE7 /* MeasureViewController.swift in Sources */,
+				E164754222D28DF900288834 /* DetailViewController.swift in Sources */,
 				E10952D922C993E2006F65B9 /* Reducers.swift in Sources */,
 				E10952D422C93250006F65B9 /* UIConfig.swift in Sources */,
 			);
@@ -425,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amirnourinia.SUPRA-GUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -444,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amirnourinia.SUPRA-GUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -19,7 +19,12 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 	// Get System Config
 	case _ as GET_SYSTEM_CONFIG:
 		state = getSystemConfig(state: state)
-		
+	
+	// Image Actions
+	case _ as SAVE_IMAGE:
+		print("User wants to save Image")
+	case _ as FREEZE_IMAGE:
+		print("User Wants to freeze the Image")
 	// Set Parameters
 	case let action as SET_FREQ:
 		state = setFreq(currentState: state, freq: action.freq)

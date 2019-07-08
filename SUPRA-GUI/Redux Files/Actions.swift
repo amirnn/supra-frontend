@@ -16,6 +16,7 @@ import ReSwift
 struct GET_SYSTEM_CONFIG: Action {}
 struct SHOW_MEASURE_MENU: Action {}
 struct SAVE_IMAGE: Action{}
+struct FREEZE_IMAGE: Action{}
 
 // Frequncy Actions
 struct SHOW_FREQ_MENU: Action{}
