@@ -65,13 +65,14 @@ class DetailViewController: UIViewController, StoreSubscriber {
 		hideAllSubViews()
 		measureViewController.view.isHidden = false
     }
-	
 	// Control the Menu's Behaviour
 	func showCurrentMenu(currentMenu: Menus){
 		switch currentMenu {
 		case Menus.Measure_Menu:
 			hideAllSubViews()
 			measureViewController.view.isHidden = false
+			// TODO: Get Current System Configuraion
+			//get
 		case Menus.Frequency_Menu:
 			hideAllSubViews()
 			frequencyViewController.view.isHidden = false

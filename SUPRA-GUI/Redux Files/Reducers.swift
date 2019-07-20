@@ -18,9 +18,12 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 	switch action {
 	// Get System Config
 	case _ as GET_SYSTEM_CONFIG:
-		state = getSystemConfig(state: state)
-	
-	// Image Actions
+		state = getSystemConfig(currentState: state)
+		
+	case let action as RECIEVED_DATA:
+		state = updateStateWithRecievedData(currentState: state, action: action)
+	// Measure Menu Actions:
+		// Image Actions
 	case _ as SAVE_IMAGE:
 		print("User wants to save Image")
 	case _ as FREEZE_IMAGE:
@@ -47,12 +50,10 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 
 
 
-func getSystemConfig(state:AppState) -> AppState {
-	return state
-}
 
 
-// Show Different Menus Reducer Implmentations
+
+// MARK: Show Different Menus Reducer Implmentations
 func showMeasureMenu(currentState: AppState) -> AppState {
 	var newState = currentState
 	newState.currentMenu = Menus.Measure_Menu
@@ -77,9 +78,22 @@ func showConfigMenu(currentState: AppState) -> AppState {
 }
 
 
-// Set Reducers
+// MARK: Set Reducers
 func setFreq(currentState: AppState ,freq: Double) -> AppState {
 	var newState = currentState
 	newState.frequency = freq
+	return newState
+}
+
+// MARK: Get Reducers
+
+func getSystemConfig(currentState:AppState) -> AppState {
+	//Will dispatch the updateStateWithRecievedData Action
+	getRunningNodesFromSupra()
+	return currentState
+}
+func updateStateWithRecievedData(currentState: AppState, action: RECIEVED_DATA)-> AppState {
+	var newState = currentState
+	newState.activeNodes = action.data["nodeIDs"].arrayValue.map({ $0.stringValue})
 	return newState
 }

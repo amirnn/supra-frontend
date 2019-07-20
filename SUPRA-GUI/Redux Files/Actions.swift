@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 import ReSwift
+import SwiftyJSON
 
 
 
 // MARK: ACTIONS
+// Measure Menu Actions
 struct GET_SYSTEM_CONFIG: Action {}
 struct SHOW_MEASURE_MENU: Action {}
 struct SAVE_IMAGE: Action{}
@@ -41,6 +43,22 @@ struct SET_TGC_VALUES: Action{
 	var chanelThree: Double
 }
 // FILTERS Actions
+struct SHOW_FILTERS_MENU: Action {}
 struct SET_FILTERS: Action{
 	var filters: [String]
 }
+
+// ASYNC Actions
+struct RECIEVED_DATA: Action{
+	var data : JSON
+}
+
+//func data_recieved_action_creator(state:AppState, store: Store<AppState>, dataType: String, data: [String]) -> Action?{
+//	switch dataType {
+//	case "nodeIDs":
+//		return RECIEVED_DATA(data: JSON(dictionaryLiteral: [dataType: data]))
+//	default:
+//		return nil
+//	}
+//	
+//}

@@ -11,6 +11,7 @@ import ReSwift
 
 class FrequencyViewController: UIViewController, StoreSubscriber {
 
+	@IBOutlet weak var systemStateInfoLabel: UILabel!
 	override func viewWillAppear(_ animated: Bool) {
 		mainStore.subscribe(self)
 	}
@@ -19,13 +20,17 @@ class FrequencyViewController: UIViewController, StoreSubscriber {
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 		// Do any additional setup after loading the view.
 	}
 	func newState(state: AppState) {
 		//showCurrentMenu(currentMenu: state.currentMenu)
+		updateView()
 	}
-    
+	
+	// MARK: Update the View and show the new details for the system
+	func updateView(){
+		systemStateInfoLabel.text = "Active Nodes: \(mainStore.state.activeNodes.joined(separator: ", ")) \n Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
+	}
 
     /*
     // MARK: - Navigation

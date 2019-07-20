@@ -17,16 +17,14 @@ class MeasureViewController: UIViewController, StoreSubscriber {
 	override func viewWillDisappear(_ animated: Bool) {
 		mainStore.unsubscribe(self)
 	}
-	override func viewDidAppear(_ animated: Bool) {
-		self.updateView()
-	}
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-        // Do any additional setup after loading the view.
+		// Do any additional setup after loading the view.
+		mainStore.dispatch(GET_SYSTEM_CONFIG())
     }
 	func newState(state: AppState) {
 		//showCurrentMenu(currentMenu: state.currentMenu)
+		updateView()
 	}
 
 	@IBOutlet weak var supraInfoLabel: UILabel!
@@ -40,8 +38,7 @@ class MeasureViewController: UIViewController, StoreSubscriber {
 	
 	// MARK: Update the View and show the new details for the system
 	func updateView(){
-		let activeNodes = getRunningNodesFromSupra()
-		systemStateInfoLabel.text = "Active Nodes: \(activeNodes.joined()) Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
+		systemStateInfoLabel.text = "Active Nodes: \(mainStore.state.activeNodes.joined(separator: ", ")) \n Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
 	}
 	
 	

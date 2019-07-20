@@ -11,6 +11,7 @@ import ReSwift
 
 class DepthViewController: UIViewController, StoreSubscriber {
 
+	@IBOutlet weak var systemStateInfoLabel: UILabel!
 	override func viewWillAppear(_ animated: Bool) {
 		mainStore.subscribe(self)
 	}
@@ -23,9 +24,12 @@ class DepthViewController: UIViewController, StoreSubscriber {
 		// Do any additional setup after loading the view.
 	}
 	func newState(state: AppState) {
+		self.updateView()
 		//showCurrentMenu(currentMenu: state.currentMenu)
 	}
-    
+	func updateView(){
+		systemStateInfoLabel.text = "Active Nodes: \(mainStore.state.activeNodes.joined(separator: ", ")) \n Frequency: \(mainStore.state.frequency) \n Filter Active: \(mainStore.state.filters.joined(separator: ", "))"
+	}
 
     /*
     // MARK: - Navigation

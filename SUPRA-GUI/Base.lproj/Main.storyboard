@@ -247,7 +247,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkI-J2-Ecx">
                                 <rect key="frame" x="180" y="80" width="560" height="400"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Info" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-NL-57g">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Info" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-NL-57g">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="400"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
@@ -349,7 +349,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-cz-8wC">
                                 <rect key="frame" x="498" y="40" width="240" height="405"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTp-uI-7Pk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTp-uI-7Pk">
                                         <rect key="frame" x="10" y="10" width="220" height="385"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -398,6 +398,9 @@
                         <viewLayoutGuide key="safeArea" id="ySY-Qj-QQP"/>
                     </view>
                     <size key="freeformSize" width="768" height="768"/>
+                    <connections>
+                        <outlet property="systemStateInfoLabel" destination="uTp-uI-7Pk" id="fGe-Ji-NlN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BT-VZ-AxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,7 +421,7 @@
             </objects>
             <point key="canvasLocation" x="1784" y="1545"/>
         </scene>
-        <!--Root View Controller-->
+        <!--CONFIG-->
         <scene sceneID="6ua-Fh-Djd">
             <objects>
                 <tableViewController storyboardIdentifier="ConfigMasterTableViewController" clearsSelectionOnViewWillAppear="NO" id="7mh-CP-MQd" customClass="ConfigMasterTableViewController" customModule="SUPRA_GUI" customModuleProvider="target" sceneMemberID="viewController">
@@ -427,21 +430,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rwy-RQ-dg1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell-ID" textLabel="exf-zo-gHw" style="IBUITableViewCellStyleDefault" id="bwd-Ss-Ut3">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rwy-RQ-dg1" id="naj-Wi-jW8">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bwd-Ss-Ut3" id="FUn-i2-AFf">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="exf-zo-gHw">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="7mh-CP-MQd" id="vGQ-2L-Alx"/>
                             <outlet property="delegate" destination="7mh-CP-MQd" id="bId-aH-xDj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="aWH-t3-6HS"/>
+                    <navigationItem key="navigationItem" title="CONFIG" id="aWH-t3-6HS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5I-Op-LbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -487,7 +500,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0p-JS-XGK">
                                 <rect key="frame" x="498" y="40" width="240" height="405"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-UV-S5h">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-UV-S5h">
                                         <rect key="frame" x="10" y="10" width="220" height="385"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
@@ -575,6 +588,9 @@
                         <viewLayoutGuide key="safeArea" id="jkt-77-icz"/>
                     </view>
                     <size key="freeformSize" width="768" height="768"/>
+                    <connections>
+                        <outlet property="systemStateInfoLabel" destination="n3e-UV-S5h" id="34Q-lf-A5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMl-eL-p0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
