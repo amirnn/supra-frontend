@@ -16,9 +16,9 @@ Also, to be able to develop and run the application one should possess an apple 
 
 To make life easier we have used three different Libraries in this project.
 
-* ReSwift: Used for Redux based state management.
-* SwiftyJSON: Used to Parse and handle JSON
-* Alamofire: Used for making requests over the network
+* [ReSwift](https://github.com/ReSwift/ReSwift): Used for Redux based state management.
+* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON): Used to Parse and handle JSON
+* [Alamofire](https://github.com/Alamofire/Alamofire): Used for making requests over the network
 
 And we are managing these dependencies using [cocoapods](https://cocoapods.org).
 In case one wants to alter or add any dependencies they can do it through Podfile inside Pods folder.
