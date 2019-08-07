@@ -2,6 +2,9 @@
 
 Front End for SUPRA
 
+In this project we build a Frontend for SUPRA prject. SUPRA is: Open Source Software Defined Ultrasound Processing for Real-Time Applications.
+The goal of this project is to build the frontend for a Touch Device such as iPad.
+
 ## Getting Started
 
 To be able to run the application one needs the following:
@@ -25,7 +28,9 @@ In case one wants to alter or add any dependencies they can do it through Podfil
 
 ## Development
 
-I have developed this application based on the Redux architecture which makes lifecycle handling much more manageable compared to MVC pattern. For one to further develop this application they need to alter the reducers and in case they need to add Actions they can simply do so by adding a new type of actions in Actions files. The Logical part of the application resides on the Redux side and one can easily adjust what application do on the case a specific event takes place.
+I have developed this application based on the Redux architecture which makes lifecycle handling much more manageable compared to MVC pattern. For one to further develop this application they need to alter the reducers and in case they need to add Actions they can simply do so by adding a new type of action in Actions files. The Logical part of the application resides on the Redux side and one can easily adjust what application does on the case a specific event takes place.
+
+There is one single source of truth in Redux architecture and that is the Store. So, one in the next steps of this project should reflect the favorable system state information, i.e. different parameters of the nodes into the store and keep them there.
 
 I have collected different parts of the application in their respective folders so one can easily use file structure to get an idea on what are the responsibility and application of each part of the code.
 
