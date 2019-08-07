@@ -23,8 +23,6 @@ To make life easier we have used three different Libraries in this project.
 And we are managing these dependencies using [cocoapods](https://cocoapods.org).
 In case one wants to alter or add any dependencies they can do it through Podfile inside Pods folder.
 
-
-
 ## Development
 
 I have developed this application based on the Redux architecture which makes lifecycle handling much more manageable compared to MVC pattern. For one to further develop this application they need to alter the reducers and in case they need to add Actions they can simply do so by adding a new type of actions in Actions files. The Logical part of the application resides on the Redux side and one can easily adjust what application do on the case a specific event takes place.
