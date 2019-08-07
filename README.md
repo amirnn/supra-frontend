@@ -27,6 +27,8 @@ In case one wants to alter or add any dependencies they can do it through Podfil
 
 ## Development
 
-I have developed this application based on the Redux architecture which makes lifecycle handling much more manageable compared to MVC pattern. For one to further develop this application they need to alter the reducers and in case they need to add Actions they can simply do so by adding a new type of actions in Actions files. I have collected different parts of the application in their respective folders so one can easily using file structure know what are the responsibility and application of each part of the code.
+I have developed this application based on the Redux architecture which makes lifecycle handling much more manageable compared to MVC pattern. For one to further develop this application they need to alter the reducers and in case they need to add Actions they can simply do so by adding a new type of actions in Actions files. The Logical part of the application resides on the Redux side and one can easily adjust what application do on the case a specific event takes place.
+
+I have collected different parts of the application in their respective folders so one can easily use file structure to get an idea on what are the responsibility and application of each part of the code.
 
 To familiarize oneself with redux architecture one can visit this site which is a quick 10 min read: [link](http://reswift.github.io/ReSwift/master/getting-started-guide.html)
