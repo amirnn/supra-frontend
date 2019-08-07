@@ -37,7 +37,7 @@ class ConfigMasterTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell-ID", for: indexPath)
 
         // Configure the cell...
-		cell.textLabel?.text = "hi"
+		cell.textLabel?.text = "none"
         return cell
     }
 
